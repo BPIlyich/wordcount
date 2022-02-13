@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
-	fmt.Println(len(os.Args[1:]))
+	words := strings.Fields(os.Args[1])
+	fmt.Println(len(words))
 }
